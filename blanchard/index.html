@@ -1,52 +1,527 @@
 <!DOCTYPE html
-    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>HTML Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-        body {
-            width: 100% !important;
-            -webkit-text-size-adjust: 100%;
-            -ms-text-size-adjust: 100%;
-            margin: 0;
-            padding: 0;
-            line-height: 100%;
-        }
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Letter Blanchard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style type="text/css">
+    body {
+      width: 100% !important;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      margin: 0;
+      padding: 0;
+      line-height: 100%;
+    }
 
-        [style*="Open Sans"] {
-            font-family: 'Open Sans', arial, sans-serif !important;
-        }
+    [style*="Arial"] {
+      font-family: Arial, Helvetica, sans-serif !important;
+    }
 
-        img {
-            outline: none;
-            text-decoration: none;
-            border: none;
-            -ms-interpolation-mode: bicubic;
-            max-width: 100% !important;
-            margin: 0;
-            padding: 0;
-            display: block;
-        }
+    img {
+      outline: none;
+      text-decoration: none;
+      border: none;
+      -ms-interpolation-mode: bicubic;
+      max-width: 100% !important;
+      margin: 0;
+      padding: 0;
+      display: block;
+    }
 
-        table td {
-            border-collapse: collapse;
-        }
+    .logo {
+      padding-top: 29px;
+      padding-bottom: 29px;
+    }
 
-        table {
-            border-collapse: collapse;
-            mso-table-lspace: 0pt;
-            mso-table-rspace: 0pt;
-        }
-    </style>
+    table td {
+      border-collapse: collapse;
+    }
+
+    table {
+      border-collapse: collapse;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+
+    .header {
+      margin: 0;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      color: #515151;
+    }
+
+    .descr {
+      margin: 0;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 24px;
+    }
+
+    .descr.black {
+      color: #515151;
+    }
+
+    .descr.white {
+      line-height: 18px;
+      color: #fff;
+    }
+
+    .subheader {
+      margin: 0;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #fff;
+    }
+
+    .subheader.gray {
+      color: #515151;
+    }
+
+    .mini-header {
+      margin: 0;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 24px;
+      color: #fff;
+    }
+
+    .more {
+      padding-top: 11px;
+      padding-right: 27px;
+    }
+
+    .more-descr {
+      margin: 0;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      color: #515151;
+    }
+
+    .btn {
+      width: 240px !important;
+      height: 45px;
+      border-radius: 48px;
+    }
+
+    .btn a {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      text-align: center;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .copy {
+      margin: 0;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 24px;
+      text-align: center;
+      color: #757575;
+    }
+
+    .subscription {
+      margin: 0;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 24px;
+      color: #757575;
+    }
+
+    .subscription a {
+      color: #9d5cd0;
+    }
+
+    .pt-32 {
+      padding-top: 32px;
+    }
+
+    .pt-28 {
+      padding-top: 28px;
+    }
+
+    .pb-32 {
+      padding-bottom: 32px;
+    }
+
+    .pb-11 {
+      padding-bottom: 11px;
+    }
+
+    .pb-8 {
+      padding-bottom: 8px;
+    }
+
+    .p-tb-26 {
+      padding-top: 26px;
+      padding-bottom: 26px;
+    }
+
+    .pt-21 {
+      padding-top: 21px;
+    }
+
+    .pt-13 {
+      padding-top: 13px;
+    }
+
+    .pt-8 {
+      padding-top: 8px;
+    }
+
+    @media(max-width: 600px) {
+      .table-600 {
+        width: 280px !important;
+      }
+
+      .table-520 {
+        width: 244px !important;
+      }
+
+      .more {
+        display: block !important;
+        padding-right: 0;
+      }
+    }
+  </style>
 </head>
 
 <body style="margin: 0; padding: 0;">
-    <div style="font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">Тестовое
-        письмо</div>
-    <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ededed">
+  <div style="font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">Blanchard -
+    художественная галлерея</div>
+  <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ededed">
+    <tr>
+      <td align="center">
+        <!-- Header + descr 1 -->
+        <table class="table table-600" cellpadding="0" cellspacing="0" width="600">
+          <!-- Шапка -->
+          <tr>
+            <td class="logo" align="center" bgcolor="#000">
+              <img src="https://github.com/kabzdec333/emailsss/blob/main/blanchard/logo.png?raw=true" alt="logo" />
+            </td>
+          </tr>
 
-    </table>
+          <!-- Изображние -->
+          <tr>
+            <td align="center">
+              <img src="https://github.com/kabzdec333/emailsss/blob/main/blanchard/img-1.jpg?raw=true" alt="river" />
+            </td>
+          </tr>
+
+          <!-- Секция 1 -->
+          <tr>
+            <td align="center">
+              <table class="table table-520" cellpadding="0" cellspacing="0" width="520">
+                <tr>
+                  <td class="pt-32" align="left">
+                    <h2 class="header" style="font-family: Arial, Helvetica, sans-serif;">
+                      Торжество импрессионизма
+                    </h2>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pt-13 pb-32" align="left">
+                    <p class="descr black" style="font-family: Arial, Helvetica, sans-serif;">
+                      Опыт говорит нам, что семантический разбор внешних противодействий требует анализа новых принципов
+                      формирования материально-технической и кадровой базы.<br /><br />
+
+                      Задача организации, в особенности же внедрение современных методик, в своём классическом
+                      представлении, допускает внедрение глубокомысленных рассуждений. Есть над чем задуматься: элементы
+                      политического процесса преданы социально-демократической анафеме! Но интерактивные прототипы
+                      заблокированы в рамках своих собственных рациональных ограничений. Сторонники тоталитаризма в
+                      науке ограничены исключительно образом мышления.
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        <!-- Black section -->
+        <table class="table table-600" cellpadding="0" cellspacing="0" width="600" bgcolor="#000000">
+          <tr>
+            <td class="p-tb-26" align="center">
+              <table class="table table-520" cellpadding="0" cellspacing="0" width="520">
+                <tr>
+                  <td align="left">
+                    <h2 class="subheader" style="font-family: Arial, Helvetica, sans-serif;">
+                      Представленные художники
+                    </h2>
+                  </td>
+                </tr>
+
+                <!-- Карточка 1 -->
+                <tr>
+                  <td class="pt-21">
+                    <img src="https://github.com/kabzdec333/emailsss/blob/main/blanchard/img-2.jpg?raw=true"
+                      alt="image 2" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pt-21" align="left">
+                    <h3 class="mini-header" style="font-family: Arial, Helvetica, sans-serif;">
+                      Поль Гоген
+                    </h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pt-8" align="left">
+                    <h3 class="descr white" style="font-family: Arial, Helvetica, sans-serif;">
+                      Прежде всего, разбавленное изрядной долей эмпатии, рациональное мышление в значительной степени
+                      обусловливает важность укрепления моральных ценностей.
+                    </h3>
+                  </td>
+                </tr>
+
+                <!-- Карточка 2 -->
+                <tr>
+                  <td class="pt-21">
+                    <img src="https://github.com/kabzdec333/emailsss/blob/main/blanchard/img-3.jpg?raw=true"
+                      alt="image 3" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pt-21" align="left">
+                    <h3 class="mini-header" style="font-family: Arial, Helvetica, sans-serif;">
+                      Огюст Ренуар
+                    </h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pt-8" align="left">
+                    <h3 class="descr white" style="font-family: Arial, Helvetica, sans-serif;">
+                      А также сделанные на базе интернет-аналитики выводы освещают чрезвычайно интересные особенности
+                      картины в целом.
+                    </h3>
+                  </td>
+                </tr>
+
+                <!-- Карточка 3 -->
+                <tr>
+                  <td class="pt-21">
+                    <img src="https://github.com/kabzdec333/emailsss/blob/main/blanchard/img-4.jpg?raw=true"
+                      alt="image 4" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pt-21" align="left">
+                    <h3 class="mini-header" style="font-family: Arial, Helvetica, sans-serif;">
+                      Клод Моне
+                    </h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pt-8" align="left">
+                    <h3 class="descr white" style="font-family: Arial, Helvetica, sans-serif;">
+                      Современная методология разработки однозначно фиксирует необходимость системы массового участия.
+                    </h3>
+                  </td>
+                </tr>
+
+                <!-- Карточка 4 -->
+                <tr>
+                  <td class="pt-21">
+                    <img src="https://github.com/kabzdec333/emailsss/blob/main/blanchard/img-5.jpg?raw=true"
+                      alt="image 5" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pt-21" align="left">
+                    <h3 class="mini-header" style="font-family: Arial, Helvetica, sans-serif;">
+                      Эдуард Мане
+                    </h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pt-8" align="left">
+                    <h3 class="descr white" style="font-family: Arial, Helvetica, sans-serif;">
+                      Но социально-экономическое развитие является качественно новой ступенью вывода текущих активов.
+                    </h3>
+                  </td>
+                </tr>
+
+                <!-- Карточка 5 -->
+                <tr>
+                  <td class="pt-21">
+                    <img src="https://github.com/kabzdec333/emailsss/blob/main/blanchard/img-6.jpg?raw=true"
+                      alt="image 2" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pt-21" align="left">
+                    <h3 class="mini-header" style="font-family: Arial, Helvetica, sans-serif;">
+                      Винсент Ван Гог
+                    </h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pt-8" align="left">
+                    <h3 class="descr white" style="font-family: Arial, Helvetica, sans-serif;">
+                      Повседневная практика показывает, что разбавленное изрядной долей эмпатии, рациональное мышление
+                      требует анализа поставленных обществом задач.
+                    </h3>
+                  </td>
+                </tr>
+
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        <!-- White section -->
+        <table class="table table-600" width="600">
+          <tr>
+            <td class="pt-13" align="center">
+              <table class="table table-520" cellpadding="0" cellspacing="0" width="520">
+                <tr>
+                  <td align="left">
+                    <h2 class="subheader gray" style="font-family: Arial, Helvetica, sans-serif;">
+                      И это ещё не всё!
+                    </h2>
+                  </td>
+                </tr>
+
+                <!-- Cards -->
+                <tr>
+                  <td class="more">
+                    <table cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td class="pb-11">
+                          <img src="https://github.com/kabzdec333/emailsss/blob/main/blanchard/icon-1.png?raw=true"
+                            alt="icon-1" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="more-descr" style="font-family: Arial, Helvetica, sans-serif;">
+                            Уникальные подборки работ с авторскими рецензиями
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td class="more">
+                    <table cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td class="pb-11">
+                          <img src="https://github.com/kabzdec333/emailsss/blob/main/blanchard/icon-2.png?raw=true"
+                            alt="icon-2" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="more-descr" style="font-family: Arial, Helvetica, sans-serif;">
+                            Возможность настроить нашу рассылку под свой личный вкус
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td class="more">
+                    <table cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td class="pb-11">
+                          <img src="https://github.com/kabzdec333/emailsss/blob/main/blanchard/icon-3.png?raw=true"
+                            alt="icon-3" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="more-descr" style="font-family: Arial, Helvetica, sans-serif;">
+                            У вас есть пожелания и предложения?<br />
+                            Напишите нам в ответ на это письмо!
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Button -->
+          <tr>
+            <td class="pt-32 pb-32" align="center">
+              <table cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="btn" align="center" bgcolor="#9d5cd0">
+                    <a href="#" style="font-family: Arial, Helvetica, sans-serif;">
+                      Узнать все подробности
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        <!-- Footer -->
+        <table class="table table-600" cellpadding="0" cellspacing="0" width="600" bgcolor="#000000">
+          <tr>
+            <td class="pt-28 pb-8" align="center">
+              <table cellpadding="0" cellspacing="0" width="144">
+                <tr>
+                  <td align="left">
+                    <a href="#">
+                      <img src="https://github.com/kabzdec333/emailsss/blob/main/blanchard/vk.png?raw=true"
+                        alt="social" />
+                    </a>
+                  </td>
+                  <td align="center">
+                    <a href="#">
+                      <img src="https://github.com/kabzdec333/emailsss/blob/main/blanchard/instagram.png?raw=true"
+                        alt="social" />
+                    </a>
+                  </td>
+                  <td align="right">
+                    <a href="#">
+                      <img src="https://github.com/kabzdec333/emailsss/blob/main/blanchard/fb.png?raw=true"
+                        alt="social" />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="pb-8">
+              <p class="copy">
+                Blanchard © 2020 / Все права защищены
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <!-- Subscription -->
+        <table class="table table-600" cellpadding="0" cellspacing="0" width="600">
+          <tr>
+            <td align="center">
+              <p class="subscription" style="font-family: Arial, Helvetica, sans-serif;">
+                Вы можете так же
+                <a href="#">отписаться от рассылки</a>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
 </body>
+
+</html>
